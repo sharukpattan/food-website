@@ -71,7 +71,7 @@
  }
  #home::before{
     content: "";
-    background:url(../food1.webp) no-repeat center center/cover;
+    background:url(../img/food1.webp) no-repeat center center/cover;
     position: absolute;
     z-index: -1;
     opacity: 0.89;
@@ -118,7 +118,7 @@
 {
     content:"";
     position: absolute;
-    background: url(../back.webp) no-repeat center center/cover;
+    background: url(../img/back.webp) no-repeat center center/cover;
     width:100%;
     height:50%;
     z-index:-1;
@@ -149,7 +149,7 @@
     height:100%;
     z-index: -1;
     opacity:2.0;
-    background: url(../contact2.webp) no-repeat center center/cover;
+    background: url(../img/contact2.webp) no-repeat center center/cover;
 }
 #contact-box{
     display:flex;
