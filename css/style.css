@@ -1,0 +1,222 @@
+/*reset our css properties*/
+*{
+    margin:0px;
+    padding:0px;
+
+}
+:root{
+ --navbar--height:59px;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+/*Navigation bar:logo and image*/
+#logo{
+
+}
+#logo img{
+    width:100px;
+    height:100px;
+    margin: -8px 12px;
+
+}
+/*navigation bar:listing items*/
+/*#navbar{
+    position: relative;
+}
+*/
+#navbar ul{
+    display:flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar::before{                  /*for giving Navbar background a color*/
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.5;
+    height:100%;
+    width:100%;
+}
+#navbar ul li{
+   list-style: none;
+}
+#navbar ul li a{
+    color:white;
+   text-decoration: none;
+   display:block;
+   padding:2px 27px;
+   margin: 34px 2px;
+   border-radius: 20px;
+ }
+ #navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    text-decoration: underline;
+ }
+ /*editing our section*/
+ #home{
+     display: flex;
+     flex-direction: column;
+     padding: 2px 2px;
+     justify-content: center;
+     align-items: center;
+     height: 645px;
+     color: white;
+ }
+ #home::before{
+    content: "";
+    background:url(../food1.webp) no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.89;
+    height:650px;
+    width:100%;
+}
+#home h1{
+    font-size: 1.5rem ;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    font-size: 1.2rem ;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+/*services*/
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 31px;
+    background-color: #e0d1d1;
+}
+#services .box img{
+    height:140px;
+    display:block;
+    margin: auto;
+}
+#services{}
+
+
+/*client section*/
+#client-section
+{
+  height: 336px;
+ 
+}
+#client-section::before
+{
+    content:"";
+    position: absolute;
+    background: url(../back.webp) no-repeat center center/cover;
+    width:100%;
+    height:50%;
+    z-index:-1;
+    opacity:0.8;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+#clients img{
+    height:80px;
+}
+.client-item
+{
+ padding: 50px;
+}
+
+/*CCOntact section*/
+#contact{
+ position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity:2.0;
+    background: url(../contact2.webp) no-repeat center center/cover;
+}
+#contact-box{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 2px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 9px;
+
+}
+#contact-box form{
+    width:40%;
+
+}
+#contact-box label{
+    font-size:1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+footer{
+    background-color: black;
+    color:white;
+    padding:15px;
+}
+/*Utility classes*/
+.h-primary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 5px 21px;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+   background-color: #3c3535;
+   cursor: pointer;
+   font-size: 1 rem;
+  
+}
+ .submit{
+    float: right;
+    margin:0px 235px;
+    padding:8px 2px;
+
+    
+}
+
+/*.btn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: darkblue;
+    width:50px;
+    height:50px;
+}
+*/
+.center{
+    text-align: center;
+}
